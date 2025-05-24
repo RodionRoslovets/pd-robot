@@ -1,0 +1,230 @@
+.max-width {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+/* Font settings */
+:root {
+    --font-primary: 'Anonymous Pro', monospace;
+    --color-primary: #4A90E2;
+    --color-primary-hover: #357ABD;
+    --color-white: #FFFFFF;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-weight: 400;
+}
+
+/* Font weights */
+.font-regular {
+    font-weight: 400;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+/* Button styles */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 0.5rem;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+/* FAQ Styles */
+.faq {
+    padding: 4rem 0;
+}
+
+.faq__title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq-item {
+    border: 1px solid #E5E7EB;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.faq-item__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    cursor: pointer;
+    background-color: #F9FAFB;
+}
+
+.faq-item__question {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #1F2937;
+}
+
+.faq-item__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    color: #6B7280;
+    transition: transform 0.3s ease;
+}
+
+.faq-item__toggle.active {
+    transform: rotate(180deg);
+}
+
+.faq-item__content {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #FFFFFF;
+}
+
+.faq-item__content.active {
+    padding: 1.25rem;
+    max-height: 1000px;
+}
+
+.faq-item__content p {
+    color: #4B5563;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #F9FAFB;
+    padding: 4rem 0;
+    margin-top: 4rem;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer__logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1F2937;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer__contact {
+    color: #4B5563;
+    transition: color 0.3s ease;
+}
+
+.footer__contact:hover {
+    color: #1F2937;
+}
+
+.footer__address {
+    color: #6B7280;
+}
+
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer__social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: #E5E7EB;
+    color: #4B5563;
+    transition: all 0.3s ease;
+}
+
+.footer__social-link:hover {
+    background-color: #D1D5DB;
+    color: #1F2937;
+}
+
+.footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer__nav-link {
+    color: #4B5563;
+    transition: color 0.3s ease;
+}
+
+.footer__nav-link:hover {
+    color: #1F2937;
+}
+
+.footer__policy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer__policy-link {
+    color: #6B7280;
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+}
+
+.footer__policy-link:hover {
+    color: #4B5563;
+}
+
+@media (max-width: 768px) {
+    .footer__content {
+        flex-direction: column;
+    }
+
+    .footer__right {
+        align-items: flex-start;
+    }
+}
