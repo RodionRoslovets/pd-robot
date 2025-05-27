@@ -34,19 +34,19 @@
                 <nav class="header__nav">
                     <ul class="header__nav-list">
                         <li class="header__nav-item">
-                            <a href="/" class="header__nav-link">Главная</a>
+                            <a href="/" class="header__nav-link" data-to="hero">Главная</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="/" class="header__nav-link">О продукте</a>
+                            <a href="/" class="header__nav-link" data-to="about">О продукте</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="/" class="header__nav-link">Преимущества</a>
+                            <a href="/" class="header__nav-link" data-to="advantages">Преимущества</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="/" class="header__nav-link">Отзывы</a>
+                            <a href="/" class="header__nav-link" data-to="reviews">Отзывы</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="/" class="header__nav-link">Контакты</a>
+                            <a href="/" class="header__nav-link" data-to="footer">Контакты</a>
                         </li>
                     </ul>
             </div>
@@ -91,7 +91,7 @@
                             <li>Длительная работа: до 8 часов без подзарядки</li>
                         </ul>
                         <blockquote class="about__quote">
-                            <p>HappyShot помог моему сыну спокойно перенести прививку. Теперь поход к врачу — не стресс!
+                            <p>HappyShot помог моему сыну спокойно перенести прививку. <span>Теперь поход к врачу — не стресс!</span>
                             </p>
                             <cite>Марина, мама 5-летнего Саши</cite>
                         </blockquote>
@@ -102,46 +102,48 @@
             </div>
         </section>
         <section class="advantages">
-            <div class="max-width grid grid-revert">
-                <div>
-                    <h2 class="advantages__title">Лучшее решение для борьбы с трипанофобией</h2>
-                    <p class="advantages__description">HappyShot помогает детям и взрослым легко и комфортно переносить
-                        уколы</p>
+            <div class="max-width">
+                <h2 class="advantages__title">Лучшее решение для борьбы с трипанофобией</h2>
 
-                    <ul>
-                        <li>
-                            <div></div>
-                            <p class="advantages-item__text">Умная вибрация и сказки для детей</p>
-                        </li>
-                        <li>
-                            <div></div>
-                            <p class="advantages-item__text">Видео о пользе уколов для подростков и взрослых</p>
-                        </li>
-                        <li>
-                            <div></div>
-                            <p class="advantages-item__text">Мягкая вибрационная подушка успокаивает</p>
-                        </li>
-                        <li>
-                            <div></div>
-                            <p class="advantages-item__text">До 8 часов автономной работы</p>
-                        </li>
-                        <li>
-                            <div></div>
-                            <p class="advantages-item__text">Искусственный интеллект подбирает подходящий режим</p>
-                        </li>
-                        <li>
-                            <div></div>
-                            <p class="advantages-item__text">Лёгкое управление из удобного приложения</p>
-                        </li>
-                    </ul>
-                    <button class="button advantages__button">Попробовать HappyShot</button>
-                </div>
-                <div>
-                    <figure>
-                        <img src="./assets/img/img-2.png" />
-                    </figure>
-                </div>
-
+                <ul class="advantages-list">
+                    <li class="advantages-item">
+                        <div class="advantages-item__image">
+                            <img src="./assets/img/vibration.png"/>
+                        </div>
+                        <p class="advantages-item__text">Умная вибрация и сказки для детей</p>
+                    </li>
+                    <li class="advantages-item">
+                        <div class="advantages-item__image">
+                            <img src="./assets/img/play.png"/>
+                        </div>
+                        <p class="advantages-item__text">Видео о пользе уколов для подростков и взрослых</p>
+                    </li>
+                    <li class="advantages-item">
+                        <div class="advantages-item__image">
+                            <img src="./assets/img/calm.png"/>
+                        </div>
+                        <p class="advantages-item__text">Мягкая вибрационная подушка успокаивает</p>
+                    </li>
+                    <li class="advantages-item">
+                        <div class="advantages-item__image">
+                            <img src="./assets/img/battery.png"/>
+                        </div>
+                        <p class="advantages-item__text">До 8 часов автономной работы</p>
+                    </li>
+                    <li class="advantages-item">
+                        <div class="advantages-item__image">
+                            <img src="./assets/img/ai.png"/>
+                        </div>
+                        <p class="advantages-item__text">Искусственный интеллект подбирает подходящий режим</p>
+                    </li>
+                    <li class="advantages-item">
+                        <div class="advantages-item__image">
+                            <img src="./assets/img/phone.png"/>
+                        </div>
+                        <p class="advantages-item__text">Лёгкое управление из удобного приложения</p>
+                    </li>
+                </ul>
+                <button class="button advantages__button">Попробовать HappyShot</button>
             </div>
         </section>
         <section class="reviews">
@@ -150,182 +152,184 @@
                 <p class="reviews__description">Наши пользователи делятся своими историями о том, как HappyShot помог им
                     и их детям справиться со страхом уколов.
                 </p>
-                <div class="swiper reviews-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <div class="review-card__main">
-                                    <div class="review-card__image-block">
-                                        <img src="./assets/img/customer1.jpg" alt="Фото клиента" class="review-card__image">
+                <div class="reviews__slider-wrapper">
+                    <div class="swiper reviews-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="review-card__main">
+                                        <div class="review-card__image-block">
+                                            <img src="./assets/img/customer1.jpg" alt="Фото клиента" class="review-card__image">
+                                        </div>
+                                        <div class="review-card__header">
+                                            <p class="review-card__name">Анна Петрова</p>
+                                            <p class="review-card__description">Мама 6-летней дочери</p>
+                                        </div>
                                     </div>
-                                    <div class="review-card__header">
-                                        <p class="review-card__name">Анна Петрова</p>
-                                        <p class="review-card__description">Мама 6-летней дочери</p>
+                                    <div class="review-card__content">
+                                        <p class="review-card__text">HappyShot стал настоящим спасением для нашей семьи. Моя
+                                            дочь всегда боялась уколов, но теперь, благодаря этому устройству, мы спокойно
+                                            проходим все необходимые процедуры.</p>
                                     </div>
-                                </div>
-                                <div class="review-card__content">
-                                    <p class="review-card__text">HappyShot стал настоящим спасением для нашей семьи. Моя
-                                        дочь всегда боялась уколов, но теперь, благодаря этому устройству, мы спокойно
-                                        проходим все необходимые процедуры.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <div class="review-card__main">
-                                    <div class="review-card__image-block">
-                                        <img src="./assets/img/customer2.jpg" alt="Фото клиента" class="review-card__image">
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="review-card__main">
+                                        <div class="review-card__image-block">
+                                            <img src="./assets/img/customer2.jpg" alt="Фото клиента" class="review-card__image">
+                                        </div>
+                                        <div class="review-card__header">
+                                            <p class="review-card__name">Сергей Иванов</p>
+                                            <p class="review-card__description">Врач-педиатр с 15-летним стажем</p>
+                                        </div>
                                     </div>
-                                    <div class="review-card__header">
-                                        <p class="review-card__name">Сергей Иванов</p>
-                                        <p class="review-card__description">Врач-педиатр с 15-летним стажем</p>
+                                    <div class="review-card__content">
+                                        <p class="review-card__text">Как врач, я часто сталкиваюсь с пациентами, которые
+                                            боятся уколов. HappyShot значительно облегчает мою работу и помогает пациентам
+                                            чувствовать себя комфортнее во время процедур.</p>
                                     </div>
-                                </div>
-                                <div class="review-card__content">
-                                    <p class="review-card__text">Как врач, я часто сталкиваюсь с пациентами, которые
-                                        боятся уколов. HappyShot значительно облегчает мою работу и помогает пациентам
-                                        чувствовать себя комфортнее во время процедур.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <div class="review-card__main">
-                                    <div class="review-card__image-block">
-                                        <img src="./assets/img/customer3.jpg" alt="Фото клиента" class="review-card__image">
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="review-card__main">
+                                        <div class="review-card__image-block">
+                                            <img src="./assets/img/customer3.jpg" alt="Фото клиента" class="review-card__image">
+                                        </div>
+                                        <div class="review-card__header">
+                                            <p class="review-card__name">Елена Смирнова</p>
+                                            <p class="review-card__description">Мама 4-летнего сына</p>
+                                        </div>
                                     </div>
-                                    <div class="review-card__header">
-                                        <p class="review-card__name">Елена Смирнова</p>
-                                        <p class="review-card__description">Мама 4-летнего сына</p>
+                                    <div class="review-card__content">
+                                        <p class="review-card__text">Раньше каждый поход к врачу был стрессом для всей
+                                            семьи. С HappyShot мой сын перестал бояться уколов, а интерактивные сказки
+                                            делают процедуру даже интересной для него.</p>
                                     </div>
-                                </div>
-                                <div class="review-card__content">
-                                    <p class="review-card__text">Раньше каждый поход к врачу был стрессом для всей
-                                        семьи. С HappyShot мой сын перестал бояться уколов, а интерактивные сказки
-                                        делают процедуру даже интересной для него.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <div class="review-card__main">
-                                    <div class="review-card__image-block">
-                                        <img src="./assets/img/customer4.jpg" alt="Фото клиента" class="review-card__image">
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="review-card__main">
+                                        <div class="review-card__image-block">
+                                            <img src="./assets/img/customer4.jpg" alt="Фото клиента" class="review-card__image">
+                                        </div>
+                                        <div class="review-card__header">
+                                            <p class="review-card__name">Игорь</p>
+                                            <p class="review-card__description">32 года</p>
+                                        </div>
                                     </div>
-                                    <div class="review-card__header">
-                                        <p class="review-card__name">Игорь</p>
-                                        <p class="review-card__description">32 года</p>
+                                    <div class="review-card__content">
+                                        <p class="review-card__text">Как взрослый человек, я всегда стеснялся своей боязни
+                                            уколов. Этот робот помог мне успокоиться и понять, что укол — это не так
+                                            страшно, как казалось!</p>
                                     </div>
-                                </div>
-                                <div class="review-card__content">
-                                    <p class="review-card__text">Как взрослый человек, я всегда стеснялся своей боязни
-                                        уколов. Этот робот помог мне успокоиться и понять, что укол — это не так
-                                        страшно, как казалось!</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <div class="review-card__main">
-                                    <div class="review-card__image-block">
-                                        <img src="./assets/img/customer5.jpg" alt="Фото клиента" class="review-card__image">
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="review-card__main">
+                                        <div class="review-card__image-block">
+                                            <img src="./assets/img/customer5.jpg" alt="Фото клиента" class="review-card__image">
+                                        </div>
+                                        <div class="review-card__header">
+                                            <p class="review-card__name">Мария</p>
+                                            <p class="review-card__description">медсестра</p>
+                                        </div>
                                     </div>
-                                    <div class="review-card__header">
-                                        <p class="review-card__name">Мария</p>
-                                        <p class="review-card__description">медсестра</p>
+                                    <div class="review-card__content">
+                                        <p class="review-card__text">HappyShot делает нашу работу проще. Дети успокаиваются,
+                                            а родители благодарят за заботу. Инновационное решение!</p>
                                     </div>
-                                </div>
-                                <div class="review-card__content">
-                                    <p class="review-card__text">HappyShot делает нашу работу проще. Дети успокаиваются,
-                                        а родители благодарят за заботу. Инновационное решение!</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <div class="review-card__main">
-                                    <div class="review-card__image-block">
-                                        <img src="./assets/img/customer6.jpg" alt="Фото клиента" class="review-card__image">
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="review-card__main">
+                                        <div class="review-card__image-block">
+                                            <img src="./assets/img/customer6.jpg" alt="Фото клиента" class="review-card__image">
+                                        </div>
+                                        <div class="review-card__header">
+                                            <p class="review-card__name">Александра</p>
+                                            <p class="review-card__description">мама 8-летнего Артема</p>
+                                        </div>
                                     </div>
-                                    <div class="review-card__header">
-                                        <p class="review-card__name">Александра</p>
-                                        <p class="review-card__description">мама 8-летнего Артема</p>
+                                    <div class="review-card__content">
+                                        <p class="review-card__text">Сын раньше прятался от врачей, а теперь идёт спокойно.
+                                            Робот рассказывает сказки, и Артем просто забывает, что пришли на укол!</p>
                                     </div>
-                                </div>
-                                <div class="review-card__content">
-                                    <p class="review-card__text">Сын раньше прятался от врачей, а теперь идёт спокойно.
-                                        Робот рассказывает сказки, и Артем просто забывает, что пришли на укол!</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <div class="review-card__main">
-                                    <div class="review-card__image-block">
-                                        <img src="./assets/img/customer7.jpg" alt="Фото клиента" class="review-card__image">
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="review-card__main">
+                                        <div class="review-card__image-block">
+                                            <img src="./assets/img/customer7.jpg" alt="Фото клиента" class="review-card__image">
+                                        </div>
+                                        <div class="review-card__header">
+                                            <p class="review-card__name">Ольга</p>
+                                            <p class="review-card__description">школьная медсестра</p>
+                                        </div>
                                     </div>
-                                    <div class="review-card__header">
-                                        <p class="review-card__name">Ольга</p>
-                                        <p class="review-card__description">школьная медсестра</p>
+                                    <div class="review-card__content">
+                                        <p class="review-card__text">Использую HappyShot в школьном медпункте — дети
+                                            перестали бояться прививок. Особенно полезны обучающие видео для старших
+                                            классов.</p>
                                     </div>
-                                </div>
-                                <div class="review-card__content">
-                                    <p class="review-card__text">Использую HappyShot в школьном медпункте — дети
-                                        перестали бояться прививок. Особенно полезны обучающие видео для старших
-                                        классов.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <div class="review-card__main">
-                                    <div class="review-card__image-block">
-                                        <img src="./assets/img/customer8.jpg" alt="Фото клиента" class="review-card__image">
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="review-card__main">
+                                        <div class="review-card__image-block">
+                                            <img src="./assets/img/customer8.jpg" alt="Фото клиента" class="review-card__image">
+                                        </div>
+                                        <div class="review-card__header">
+                                            <p class="review-card__name">Роман</p>
+                                            <p class="review-card__description">28 лет</p>
+                                        </div>
                                     </div>
-                                    <div class="review-card__header">
-                                        <p class="review-card__name">Роман</p>
-                                        <p class="review-card__description">28 лет</p>
+                                    <div class="review-card__content">
+                                        <p class="review-card__text">После неприятного опыта в детстве я избегал уколов как
+                                            мог. HappyShot помог мне справиться с этим страхом, а вибрация реально
+                                            расслабляет.</p>
                                     </div>
-                                </div>
-                                <div class="review-card__content">
-                                    <p class="review-card__text">После неприятного опыта в детстве я избегал уколов как
-                                        мог. HappyShot помог мне справиться с этим страхом, а вибрация реально
-                                        расслабляет.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <div class="review-card__main">
-                                    <div class="review-card__image-block">
-                                        <img src="./assets/img/customer9.jpg" alt="Фото клиента" class="review-card__image">
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="review-card__main">
+                                        <div class="review-card__image-block">
+                                            <img src="./assets/img/customer9.jpg" alt="Фото клиента" class="review-card__image">
+                                        </div>
+                                        <div class="review-card__header">
+                                            <p class="review-card__name">Виктория</p>
+                                            <p class="review-card__description">врач-терапевт
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="review-card__header">
-                                        <p class="review-card__name">Виктория</p>
-                                        <p class="review-card__description">врач-терапевт
-                                        </p>
+                                    <div class="review-card__content">
+                                        <p class="review-card__text">HappyShot помогает даже подросткам, которые обычно
+                                            боятся признать свой страх. Удобный, компактный и действительно работает!</p>
                                     </div>
-                                </div>
-                                <div class="review-card__content">
-                                    <p class="review-card__text">HappyShot помогает даже подросткам, которые обычно
-                                        боятся признать свой страх. Удобный, компактный и действительно работает!</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="review-card">
-                                <div class="review-card__main">
-                                    <div class="review-card__image-block">
-                                        <img src="./assets/img/customer10.jpg" alt="Фото клиента" class="review-card__image">
+                            <div class="swiper-slide">
+                                <div class="review-card">
+                                    <div class="review-card__main">
+                                        <div class="review-card__image-block">
+                                            <img src="./assets/img/customer10.jpg" alt="Фото клиента" class="review-card__image">
+                                        </div>
+                                        <div class="review-card__header">
+                                            <p class="review-card__name">Татьяна</p>
+                                            <p class="review-card__description">бабушка 6-летней Кати</p>
+                                        </div>
                                     </div>
-                                    <div class="review-card__header">
-                                        <p class="review-card__name">Татьяна</p>
-                                        <p class="review-card__description">бабушка 6-летней Кати</p>
+                                    <div class="review-card__content">
+                                        <p class="review-card__text">Катюше всегда было страшно, но HappyShot превратил
+                                            уколы в игру. Она даже сама просит включить робота перед процедурой!</p>
                                     </div>
-                                </div>
-                                <div class="review-card__content">
-                                    <p class="review-card__text">Катюше всегда было страшно, но HappyShot превратил
-                                        уколы в игру. Она даже сама просит включить робота перед процедурой!</p>
                                 </div>
                             </div>
                         </div>
@@ -350,54 +354,96 @@
                 <h1 class="faq__title">
                     FAQ
                 </h1>
-                <div class="faq__list">
-                    <div class="faq-item">
-                        <div class="faq-item__header">
-                            <h3 class="faq-item__question">Как работает HappyShot?</h3>
-                            <button class="faq-item__toggle" aria-label="Открыть ответ">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="faq-item__content">
-                            <p>HappyShot использует комбинацию мягкой вибрации и развлекательного контента для
-                                отвлечения внимания во время процедуры. Устройство подключается к приложению и
-                                автоматически подбирает оптимальный режим работы.</p>
-                        </div>
+                <div class="faq-wrapper">
+                    <div class="faq-image">
+                        <img src="./assets/img/img-2.png"/>
                     </div>
-
-                    <div class="faq-item">
-                        <div class="faq-item__header">
-                            <h3 class="faq-item__question">Подходит ли HappyShot детям?</h3>
-                            <button class="faq-item__toggle" aria-label="Открыть ответ">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                            </button>
+                    <div class="faq__list">
+                        <div class="faq-item">
+                            <div class="faq-item__header">
+                                <h3 class="faq-item__question">Как работает HappyShot?</h3>
+                                <button class="faq-item__toggle" aria-label="Открыть ответ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 9L12 15L18 9" stroke="#000000" stroke-width="2" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="faq-item__content">
+                                <p>HappyShot использует комбинацию мягкой вибрации и развлекательного контента для
+                                    отвлечения внимания во время процедуры. Устройство подключается к приложению и
+                                    автоматически подбирает оптимальный режим работы.</p>
+                            </div>
                         </div>
-                        <div class="faq-item__content">
-                            <p>Да, HappyShot специально разработан с учетом потребностей детей разного возраста. Для
-                                малышей есть режим со сказками и мягкой вибрацией, а для детей постарше - обучающие
-                                видео и игры.</p>
+    
+                        <div class="faq-item">
+                            <div class="faq-item__header">
+                                <h3 class="faq-item__question">Подходит ли HappyShot для взрослых и подростков?</h3>
+                                <button class="faq-item__toggle" aria-label="Открыть ответ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 9L12 15L18 9" stroke="#000000" stroke-width="2" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="faq-item__content">
+                                <p>Да! Для подростков и взрослых предусмотрены обучающие видео, которые помогают понять процесс укола и снять страх. Вибрация также помогает расслабиться.</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="faq-item__header">
-                            <h3 class="faq-item__question">Сколько времени работает устройство без подзарядки?</h3>
-                            <button class="faq-item__toggle" aria-label="Открыть ответ">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" />
-                                </svg>
-                            </button>
+    
+                        <div class="faq-item">
+                            <div class="faq-item__header">
+                                <h3 class="faq-item__question">Можно ли использовать HappyShot дома?</h3>
+                                <button class="faq-item__toggle" aria-label="Открыть ответ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 9L12 15L18 9" stroke="#000000" stroke-width="2" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="faq-item__content">
+                                <p>Конечно! Робот удобен и компактен, его можно использовать дома при проведении прививок или инъекций с участием медперсонала.</p>
+                            </div>
                         </div>
-                        <div class="faq-item__content">
-                            <p>HappyShot может работать до 8 часов без подзарядки, что более чем достаточно для
-                                нескольких процедур. Полная зарядка устройства занимает около 2 часов.</p>
+                        <div class="faq-item">
+                            <div class="faq-item__header">
+                                <h3 class="faq-item__question">Как долго работает робот на одном заряде?</h3>
+                                <button class="faq-item__toggle" aria-label="Открыть ответ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 9L12 15L18 9" stroke="#000000" stroke-width="2" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="faq-item__content">
+                                <p>HappyShot оснащён мощным аккумулятором, который обеспечивает до 8 часов непрерывной работы. Зарядка осуществляется через стандартный USB-порт.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-item__header">
+                                <h3 class="faq-item__question">Насколько безопасно использование HappyShot?</h3>
+                                <button class="faq-item__toggle" aria-label="Открыть ответ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 9L12 15L18 9" stroke="#000000" stroke-width="2" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="faq-item__content">
+                                <p>Робот изготовлен из гипоаллергенных материалов, не вызывает раздражения кожи и соответствует всем медицинским стандартам безопасности.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-item__header">
+                                <h3 class="faq-item__question">Где я могу купить HappyShot?</h3>
+                                <button class="faq-item__toggle" aria-label="Открыть ответ">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M6 9L12 15L18 9" stroke="#000000" stroke-width="2" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="faq-item__content">
+                                <p>Заказать HappyShot можно на нашем официальном сайте, а также в партнёрских аптеках. Доставка осуществляется по всей стране.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </section>
     </main>
@@ -412,35 +458,31 @@
                         <p class="footer__address">г. Москва, ул. Примерная, д. 123</p>
                     </div>
                 </div>
-                <div class="footer__right">
                     <div class="footer__social">
                         <a href="#" class="footer__social-link" aria-label="VK">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93V15.07C2 20.67 3.33 22 8.93 22H15.07C20.67 22 22 20.67 22 15.07V8.93C22 3.33 20.67 2 15.07 2ZM18.15 16.27H16.69C16.14 16.27 15.97 15.97 14.86 14.94C13.86 14.08 13.49 13.88 13.27 13.88C12.93 13.88 12.79 14.03 12.79 14.53V15.69C12.79 16.05 12.66 16.27 11.66 16.27C10.32 16.27 8.81 15.32 7.8 13.59C5.85 10.27 5.2 8.42 5.2 8.03C5.2 7.86 5.31 7.7 5.56 7.7H7.02C7.33 7.7 7.48 7.88 7.61 8.2C8.23 9.68 9.31 11.15 9.94 11.15C10.21 11.15 10.35 11 10.35 10.45V8.86C10.31 8.14 10.11 7.95 9.66 7.95C9.31 7.95 8.81 8.1 8.23 8.35C7.66 8.59 7.19 8.7 6.79 8.7C6.38 8.7 6.2 8.5 6.2 8.03V7.2C6.2 6.88 6.38 6.7 6.79 6.7H9.31C9.66 6.7 9.81 6.88 9.81 7.2V8.5C10.21 8.2 10.66 7.95 11.11 7.95C12.79 7.95 13.79 9.03 13.79 10.45V14.53C13.79 14.88 13.93 15.03 14.26 15.03C14.49 15.03 14.86 14.88 15.36 14.53C16.14 13.88 16.69 13.2 17.19 12.53C17.41 12.2 17.61 12 17.93 12H19.39C19.7 12 19.9 12.2 19.9 12.53V14.53C19.9 15.03 19.7 16.27 18.15 16.27Z" />
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.8039 20.8C9.65394 20.8 6.14617 16.7459 6 10H9.08058C9.18177 14.9513 11.4528 17.0486 13.2517 17.4811V10H16.1524V14.2702C17.9288 14.0865 19.7949 12.1405 20.4245 10H23.3253C22.8419 12.6378 20.8181 14.5838 19.379 15.3838C20.8181 16.0324 23.123 17.7297 24 20.8H20.8069C20.1211 18.7459 18.4123 17.1567 16.1524 16.9405V20.8H15.8039Z" fill="currentColor"/>
                             </svg>
                         </a>
                         <a href="#" class="footer__social-link" aria-label="Telegram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.64 8.8C16.49 10.38 15.84 14.22 15.51 15.99C15.37 16.74 15.09 16.99 14.83 17.02C14.25 17.07 13.81 16.64 13.25 16.27C12.37 15.69 11.87 15.33 11.02 14.77C10.03 14.12 10.67 13.76 11.24 13.18C11.39 13.03 13.95 10.7 14 10.49C14.0069 10.4582 14.006 10.4252 13.9973 10.3938C13.9886 10.3624 13.9724 10.3337 13.95 10.31C13.89 10.26 13.81 10.27 13.74 10.28C13.65 10.29 13.09 10.5 11.62 11.3C9.78 12.28 8.74 12.76 8.41 12.76C8.08 12.76 7.79 12.6 7.57 12.2C7.41 11.92 7.09 11.5 6.93 11.29C6.68 10.94 6.39 10.96 6.16 11C5.77 11.08 5.45 11.25 5.19 11.5C4.83 11.84 4.58 12.15 4.58 12.57C4.58 12.99 5.09 13.41 5.19 13.5C7.94 15.59 9.38 16.5 10.13 16.83C10.89 17.16 11.16 17.21 11.39 17.2C11.67 17.19 12.03 17.04 12.29 16.91C12.61 16.75 14.81 15.53 15.71 14.85C16.66 14.14 17.47 13.61 17.55 13.5C17.69 13.33 17.69 13.17 17.64 13.09C17.6 13 17.37 12.9 16.64 12.4C16.29 12.18 15.77 11.85 15.41 11.6C15.05 11.35 14.76 11.2 14.76 11.11C14.76 11 14.84 10.95 14.95 10.9C15.06 10.85 15.91 10.35 16.05 10.28C16.17 10.21 16.3 10.18 16.39 10.27C16.5 10.36 16.5 10.58 16.5 10.58C16.5 10.58 16.64 11.05 16.64 11.8Z" />
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.27812 9.12061L6.01345 12.8433C6.39212 12.8433 6.55612 12.6806 6.75279 12.4853L8.52812 10.7886L12.2068 13.4826C12.8815 13.8586 13.3568 13.6606 13.5388 12.8619L15.9535 1.54728L15.9541 1.54661C16.1681 0.549278 15.5935 0.159278 14.9361 0.403945L0.742785 5.83794C-0.225881 6.21394 -0.211215 6.75394 0.578119 6.99861L4.20679 8.12728L12.6355 2.85328C13.0321 2.59061 13.3928 2.73594 13.0961 2.99861L6.27812 9.12061Z" fill="white"/>
                             </svg>
                         </a>
                     </div>
                     <nav class="footer__nav">
                         <ul class="footer__nav-list">
-                            <li><a href="/" class="footer__nav-link">Главная</a></li>
-                            <li><a href="/" class="footer__nav-link">О продукте</a></li>
-                            <li><a href="/" class="footer__nav-link">Преимущества</a></li>
-                            <li><a href="/" class="footer__nav-link">Отзывы</a></li>
-                            <li><a href="/" class="footer__nav-link">Контакты</a></li>
+                            <li><a href="/" class="footer__nav-link" data-to="hero">Главная</a></li>
+                            <li><a href="/" class="footer__nav-link" data-to="about">О продукте</a></li>
+                            <li><a href="/" class="footer__nav-link" data-to="advantages">Преимущества</a></li>
+                            <li><a href="/" class="footer__nav-link" data-to="reviews">Отзывы</a></li>
+                            <li><a href="/" class="footer__nav-link" data-to="footer">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="footer__policy">
                         <a href="/" class="footer__policy-link">Политика конфиденциальности</a>
                         <a href="/" class="footer__policy-link">Пользовательское соглашение</a>
                     </div>
-                </div>
             </div>
         </div>
     </footer>
