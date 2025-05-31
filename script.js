@@ -57,6 +57,14 @@ const slideDown = (target, duration = 500, callback = () => {}) => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
+  // hero start animation
+  const hero = document.querySelector('.hero')
+
+  setTimeout(() => {
+    hero.classList.add('hero--active')
+  }, 1000);
+
+
   //swiper
   const slider = document.querySelector(".reviews-swiper");
 
